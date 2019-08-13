@@ -1,4 +1,5 @@
 #define DEBUG_FLASH 0
+#define _FILE_OFFSET_BITS 64
 
 #include <stdarg.h>
 #include <stdio.h>
