@@ -497,6 +497,18 @@ int do_semihosting (stlink_t *sl, uint32_t r0, uint32_t r1, uint32_t *ret) {
         }
         break;
     }
+    case angel_SWIreason_ReportException:
+    {
+        switch (r1)
+        {
+        case ADP_Stopped_ApplicationExit:
+            DLOG("Semihosting angel_SWIreason_ReportException: ADP_Stopped_ApplicationExit);
+            system("exit");
+        
+        default:
+            break;
+        }
+    }
     default:
         fprintf(stderr, "semihosting: unsupported call %#x\n", r0);
         return -1;
