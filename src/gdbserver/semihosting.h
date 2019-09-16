@@ -26,8 +26,12 @@
 #define SEMIHOST_SYS_GET_CMD  0x15
 #define SEMIHOST_SYS_HEAPINFO 0x16
 
+#define angle_SWIreason_ReportException 0x18
+
 #define SEMIHOST_SYS_ELAPSED  0x30
 #define SEMIHOST_SYS_TICKFREQ 0x31
+
+#define ADP_Stopped_ApplicationExit 0x20026
 
 int do_semihosting (stlink_t *sl, uint32_t r0, uint32_t r1, uint32_t *ret);
 
