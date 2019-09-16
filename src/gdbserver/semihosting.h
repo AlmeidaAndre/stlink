@@ -26,7 +26,7 @@
 #define SEMIHOST_SYS_GET_CMD  0x15
 #define SEMIHOST_SYS_HEAPINFO 0x16
 
-#define angle_SWIreason_ReportException 0x18
+#define angel_SWIreason_ReportException 0x18
 
 #define SEMIHOST_SYS_ELAPSED  0x30
 #define SEMIHOST_SYS_TICKFREQ 0x31
